@@ -9,7 +9,7 @@ type Props = {
 
 export const Directory = ({ directories, title, className }: Props) => {
   return (
-    <div className={`flex flex-1 flex-col h-full p-xs ${className || ''}`}>
+    <div className={`flex flex-1 flex-col h-full px-xs ${className || ''}`}>
       <span className="text-yellow text-center">{title}</span>
       <nav>
         {directories.map((item) => (
