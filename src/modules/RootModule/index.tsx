@@ -11,19 +11,19 @@ export const RootModule = () => {
       </div>
       <div className="flex flex-1 border-4 border-t-0">
         <div className="flex flex-1 border-2 border-t-0 flex-col m-xxs mt-0">
-          <div className="flex-1 flex">
+          <div className="relative flex-1 flex">
             <Directory
               className="w-1/3 overflow-hidden"
               title="Name"
               directories={DIRECTORIES}
             />
-            <Divider />
+            <Divider className="relative right-[2px]" />
             <Directory
               className="w-1/3 overflow-hidden"
               title="Name"
               directories={[]}
             />
-            <Divider />
+            <Divider className="relative left-[2px]" />
             <Directory
               className="w-1/3 overflow-hidden"
               title="Name"

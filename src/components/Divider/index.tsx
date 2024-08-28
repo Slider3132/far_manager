@@ -1,3 +1,5 @@
-export const Divider = () => {
-  return <div className="flex-divider bg-light-cyan"></div>;
+export const Divider = ({ className }: { className?: string }) => {
+  return (
+    <div className={`flex-divider bg-light-cyan ${className || ''}`}></div>
+  );
 };
