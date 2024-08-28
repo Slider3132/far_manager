@@ -12,7 +12,7 @@ export const CatalogMenu = ({ catalogs, className }: Props) => {
       <div className="w-fit px-sm text-center text-yellow text-md bg-light-cyan">
         \
       </div>
-      <ul className={`list-none pl-lg `}>
+      <ul className={`list-none pl-xl `}>
         {catalogs.map((item) => (
           <CatalogItem key={item.title} title={item.title} />
         ))}

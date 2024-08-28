@@ -2,10 +2,11 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/layout/**/*.{js,ts,jsx,tsx,mdx}',
     './src/modules/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/utils/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -25,24 +26,17 @@ const config: Config = {
       },
       gap: {
         xxs: '4px',
-        md: '32px',
-      },
-      margin: {
-        xxs: '4px',
-        md: '32px',
       },
       padding: {
         xxs: '4px',
-        xs: '6px',
+        xs: '8px',
         sm: '16px',
-        md: '32px',
-        lg: '48px',
+        md: '24px',
+        lg: '32px',
+        xl: '48px',
       },
       borderColor: {
         DEFAULT: '#55FFFF',
-      },
-      flex: {
-        divider: '0 1 4px',
       },
     },
   },

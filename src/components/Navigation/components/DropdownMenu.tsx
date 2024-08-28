@@ -1,4 +1,5 @@
 import { DropdownMenuType } from '@/types';
+import { getPseudoBorder } from '@/utils';
 import { useEffect, useRef } from 'react';
 import { DropdownButton } from './DropdownButton';
 
@@ -31,9 +32,13 @@ export const DropdownMenu = ({ open, items, onClose }: Props) => {
   return (
     <div
       ref={menuRef}
-      className="absolute w-[512px] z-10 px-xxs py-[12px] top-[32px] left-0 bg-dark-cyan"
+      className="absolute z-10 w-[512px] px-xxs py-[12px] top-[32px] left-0 bg-dark-cyan"
     >
-      <ul className="border-4 py-[8px] px-xxs border-black">
+      <ul
+        className={` ${getPseudoBorder({
+          size: 'md',
+        })} py-[12px] px-xs before:border-black`}
+      >
         {items.map((item, index) => (
           <DropdownButton key={index} item={item} />
         ))}

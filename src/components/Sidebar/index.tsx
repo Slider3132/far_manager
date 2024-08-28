@@ -1,4 +1,5 @@
 import { CatalogItemType } from '@/types';
+import { getPseudoBorder } from '@/utils';
 import { BottomSpace } from '../BottomSpace';
 import { CatalogMenu } from '../CatalogMenu';
 
@@ -12,9 +13,20 @@ export const Sidebar = ({ catalogs }: Props) => {
       <div className="text-center text-lg text-dark-blue bg-light-cyan">
         Tree
       </div>
-      <div className="flex flex-1 border-4 border-t-0 ">
-        <div className="flex flex-col flex-1 m-xxs mt-0  border-2 border-t-0">
-          <CatalogMenu className="flex-1 p-xs pt-0" catalogs={catalogs} />
+
+      <div
+        className={`flex p-xs pt-0 w-full h-full flex-1 ${getPseudoBorder({
+          size: 'md',
+          none: ['top'],
+        })}`}
+      >
+        <div
+          className={`flex flex-1 flex-col ${getPseudoBorder({
+            size: 'sm',
+            none: ['top'],
+          })}`}
+        >
+          <CatalogMenu className="flex-1 p-xs pt-0 pb-0" catalogs={catalogs} />
           <BottomSpace description="C:\" />
         </div>
       </div>
