@@ -35,7 +35,7 @@ export const DropdownMenu = ({ open, items, onClose }: Props) => {
     >
       <ul className="border-4 py-[8px] px-xxs border-black">
         {items.map((item, index) => (
-          <DropdownButton key={index} item={item} className="" />
+          <DropdownButton key={index} item={item} />
         ))}
       </ul>
     </div>

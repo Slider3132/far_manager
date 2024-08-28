@@ -11,7 +11,7 @@ export const Directory = ({ directories, title, className }: Props) => {
   return (
     <div className={`flex flex-1 flex-col h-full p-xs ${className || ''}`}>
       <span className="text-yellow text-center">{title}</span>
-      <nav className="">
+      <nav>
         {directories.map((item) => (
           <DirectoryItem key={item.title} item={item} />
         ))}
