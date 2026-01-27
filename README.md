@@ -1,3 +1,6 @@
+https://www.figma.com/design/ASmuNm8qRAE0nocFNW4lEY/Q-Test-Task?node-id=1-10&t=A0gyVldHXTQNBS6T-0
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
